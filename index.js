@@ -10,8 +10,7 @@ const menu = [
   '5. Exit',
 ];
 
-const depositAction = async (amount) => {
-  console.log('amount ty: ', amount);
+const depositAction = (amount) => {
   if (typeof +amount != 'number') {
     console.log(`Incorect Amount`);
     return null;
@@ -22,6 +21,26 @@ const depositAction = async (amount) => {
   console.log(`Deposit success`);
   console.log(`New balance: ${formatMoney(res.balance)}`);
   console.log('\n----------------------------\n');
+};
+
+const withdrawAction = (amount) => {
+  if (typeof +amount != 'number') {
+    console.log(`Incorect Amount`);
+    return null;
+  }
+
+  const res = wallet.withdraw(+amount);
+  if (typeof res != 'number') {
+    console.log('\n----------------------------\n');
+    console.log(`Withdraw success`);
+    console.log(`New balance: ${formatMoney(res.balance)}`);
+    console.log('\n----------------------------\n');
+  } else {
+    console.log('\n----------------------------\n');
+    console.log(`Withdraw failed`);
+    console.log(`balance: ${formatMoney(res)}`);
+    console.log('\n----------------------------\n');
+  }
 };
 
 const main = async () => {
@@ -40,8 +59,13 @@ const main = async () => {
         break;
 
       case '2':
-        const amount = await readLines('Enter amount: ');
-        depositAction(amount);
+        const depositAmount = await readLines('Enter amount: ');
+        depositAction(depositAmount);
+        break;
+
+      case '3':
+        const withdrawAmount = await readLines('Enter amount: ');
+        withdrawAction(withdrawAmount);
         break;
 
       default:
