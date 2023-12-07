@@ -43,6 +43,8 @@ const withdrawAction = (amount) => {
   }
 };
 
+const historyAction = () => {};
+
 const main = async () => {
   let state = true;
   while (state) {
@@ -68,8 +70,26 @@ const main = async () => {
         withdrawAction(withdrawAmount);
         break;
 
-      default:
+      case '4':
+        console.log('\n----------------------------\n');
+        console.log(`History`);
+        wallet.activityHistory();
+        console.log('\n----------------------------\n');
+        break;
+
+      case '5':
+        console.log(`\n----------------------------\n
+            Good Bye!
+            \n----------------------------\n
+            `);
         state = false;
+        break;
+
+      default:
+        console.log(`\n----------------------------\n
+            Choice not considered
+            \n----------------------------\n
+            `);
         break;
     }
   }
