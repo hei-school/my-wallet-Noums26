@@ -20,8 +20,8 @@ You can perform the following actions on the wallet:
 
 - For impementation in JS:
 
-  [Go to JS implementation]()
+  [Go to JS implementation](https://github.com/hei-school/my-wallet-Noums26/tree/feature/javascript)
 
 - For impementation in Python:
 
-  [Go to Python implementation]()
+  [Go to Python implementation](https://github.com/hei-school/my-wallet-Noums26/tree/feature/python)
