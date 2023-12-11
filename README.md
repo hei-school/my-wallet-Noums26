@@ -1,78 +1,27 @@
-README. TITLE. DESCRIPTION. FEATURES. BUG?. INSTALLATION. LICENCE
+# Wallet
 
-# Portfeuille
+Wallet is an application that simulates the standard use of a wallet.
 
-Very ve?
+We only have money in the wallet at the moment.
 
-- Ndana mividy vaovao.
-- Tsia:
-  - Afaka sokafana
-  - Afaka hitorahana alika
+You can perform the following actions on the wallet:
 
-<!-- ## Features -->
+- 1- Check balance
 
-- ### CIN / PC
+- 2- Insert money
 
-  #### Action
+- 3- Withdraw money
 
-  - State:
-    - False:
-      - Insert
-      - ~~Get out~~
-    - True:
-      - Get out
-        - Insert
+- 4- View your activity history
 
-- ### Money
+- 5- Exit
 
-  #### Action
+## Implementation
 
-  - State:
-    - False:
-      - Insert
-      - ~~Get out~~
-    - True:
-      - Insert
-      - Get out
-        - is the balance right ?
-          - True:
-            - Continue action
-          - False:
-            - Abort action
-            - Insert
-      - Count
+- For impementation in JS:
 
-- ### CB
+  [Go to JS implementation]()
 
-  #### Action
+- For impementation in Python:
 
-  - State:
-    - False:
-      - Insert
-      - ~~Get out~~
-    - True:
-      - Select if 1+
-        - Get out
-
-- ### CV
-
-  #### Action
-
-  - State:
-    - False:
-      - Insert
-      - ~~Get out~~
-    - True:
-      - Get out
-
-- ### PI
-  #### Action
-  - State:
-    - False:
-      - Insert
-      - ~~Get out~~
-    - True:
-      - Get out
-      - Jerijereo ao
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hy8NMZUz)
+  [Go to Python implementation]()
