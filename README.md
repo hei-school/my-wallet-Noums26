@@ -1,1 +1,13 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hy8NMZUz)
+# Wallet
+
+This is a Python implementation of **Wallet**.
+
+For the use case [go to the README on main branch](https://github.com/hei-school/my-wallet-Noums26/blob/main/README.md)
+
+To run app:
+
+- Make sure you have python
+
+- Then run:
+
+> python main.py
